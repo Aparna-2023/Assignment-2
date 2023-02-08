@@ -1,0 +1,88 @@
+/* Author : Aparna Raj
+Date:7/2/2023 */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Source+Sans+Pro:ital,wght@0,700;0,900;1,600;1,900&display=swap");
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Roboto", sans-serif;
+}
+.banner {
+	height: 100vh;
+	text-align: end;
+	background-image: url(../images/academy-banner.jpg);
+}
+.logo {
+	padding-right: 10%;
+}
+h1,
+h3 {
+	font-weight: bolder;
+}
+.teach {
+	min-height: 100vh;
+}
+.points {
+	background-color: #1e2531;
+	color: rgb(104, 218, 238);
+	font-size: 23px;
+	margin: -13%;
+}
+
+.points p::before {
+	content: "{";
+	color: red;
+}
+.points p::after {
+	content: "}";
+	color: red;
+}
+.course {
+	height: 100vh;
+	background-image: url(../images/modulebg.jpg);
+	background-size: cover;
+}
+.course a {
+	text-decoration: none;
+	background-color: rgba(0, 0, 0, 0.7);
+	color: #ffff;
+	border-radius: 10px;
+	padding: 13px;
+}
+.inter-1 {
+	background-image: url(../images/testsbg.jpg);
+	min-height: 70vh;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.inter-2 {
+	background-image: url(../images/intrvwbg.jpg);
+	min-height: 70vh;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.inside {
+	background-color: rgba(6, 8, 11, 0.7);
+	color: #fff;
+}
+.button1 {
+	color: #f26422;
+	border: 2px solid #f26422;
+}
+.footer {
+	min-height: 100vh;
+}
+
+@media screen and (max-width: 576px) {
+	.banner {
+		background-image: none;
+		background-color: #fff;
+		text-align: center;
+	}
+	.points {
+		margin-left: 0;
+	}
+	.para1 {
+		margin-top: 10px;
+	}
+}
